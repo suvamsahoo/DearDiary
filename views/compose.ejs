@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+<h1>COMPOSE</h1>
+<!--So we handle a post request to the '/compose' route in our server.-->
+<form action="/compose" method="POST"><!--make a post request to our server AND in action where you send all data-->
+   <div class="form-group">
+     <label>TITLE</label>
+     <input type="text" placeholder="Enter" name="POST_TITLE" class="form-control"><br>
+     <label>POST</label> 
+     <textarea name="POST_BODY" id="" cols="30" rows="5" class="form-control"></textarea>
+   </div>
+   <button type="submit" name="button" class="btn btn-primary">PUBLISH</button><!--button is submit type so when we click on it, it will submit all the content present in the form.-->
+</form>
+
+
+<%- include('partials/footer') -%>
+
